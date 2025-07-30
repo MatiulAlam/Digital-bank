@@ -41,7 +41,12 @@ public class BankingResponseUtil {
                         ErrorCode.JWT_TOKEN_EXPIRED,
                         HttpStatus.BAD_REQUEST
                 );
-
+            case ROLE_NOT_FOUND:
+                throw new BankingApplicationException(
+                        authResultCode,
+                        ErrorCode.ROLE_NOT_FOUND,
+                        HttpStatus.BAD_REQUEST
+                );
 
             default:
                 System.out.println("result 3");

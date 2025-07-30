@@ -42,7 +42,7 @@ public class AuthController {
         //User user = new User(signupDTO.getUserName(), signupDTO.getPassword());
         User user = userDetailsManager.createUser(signupDTO);
 
-        Authentication authentication = UsernamePasswordAuthenticationToken.authenticated(user, signupDTO.getPassword(), Collections.EMPTY_LIST);
+        Authentication authentication = UsernamePasswordAuthenticationToken.authenticated(user, user.getPasswordHash(), Collections.EMPTY_LIST);
 
         return ResponseEntity.ok(tokenGenerator.createToken(authentication));
     }

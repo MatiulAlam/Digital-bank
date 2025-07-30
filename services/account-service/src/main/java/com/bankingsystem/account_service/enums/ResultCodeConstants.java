@@ -14,6 +14,7 @@ package com.bankingsystem.account_service.enums;
  */
 public enum ResultCodeConstants {
     INTERNAL_SERVER_ERROR, FILE_SIZE_LIMIT, FILE_REQUIRED, UNSUPPORTED_FILE_TYPE, ALREADY_EXIST, TOKEN_EXPIRED, INVALID_PROPERTY_KEY,
+    ROLE_NOT_FOUND,
     ResultCodeConstants () {
     }
 }

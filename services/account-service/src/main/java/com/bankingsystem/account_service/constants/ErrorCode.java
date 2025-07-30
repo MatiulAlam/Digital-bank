@@ -15,7 +15,7 @@ package com.bankingsystem.account_service.constants;
 public final class ErrorCode {
     public static final String ALREADY_EXIST = "40101";
     public static final String JWT_TOKEN_EXPIRED = "40103";
-
+    public static final String ROLE_NOT_FOUND = "4007";
     public static final String INTERNAL_SERVER_ERROR = "5000";
     public static final int MAINTENANCE_MODE = 9999;
 
